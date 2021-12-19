@@ -10,6 +10,11 @@
   height: 20px;
   cursor: pointer;
 }
+.h_nav-bar .loggedUser {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
 .h_nav-bar .icon:hover {
   filter: brightness(0) saturate(100%) invert(47%) sepia(90%) saturate(1022%)
     hue-rotate(313deg) brightness(104%) contrast(108%);
