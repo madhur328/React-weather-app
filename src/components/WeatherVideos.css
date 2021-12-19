@@ -1,0 +1,105 @@
+.weather-videos {
+  width: 50%;
+  order: 2;
+  padding: 10px 30px;
+  border-top: 1px solid rgb(236, 228, 228);
+}
+.weather-videos .video-container-outer1 {
+  display: flex;
+  justify-content: space-between;
+}
+.weather-videos .video-container-outer2 {
+  display: flex;
+  flex-direction: column;
+}
+.weather-videos .video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: #e1fff5;
+  cursor: pointer;
+}
+.weather-videos .video-thumb {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.weather-videos .video-thumb-current {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+.weather-videos .vid_text_title {
+  font-size: 14px;
+  font-weight: bold;
+}
+.weather-videos .vid_text_by {
+  font-size: 12px;
+  color: #858b89;
+  margin: 0;
+}
+.weather-videos .pause-div {
+  background-color: #63d3ab;
+  padding: 10px 0;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+.weather-videos .pause {
+  width: 20px;
+  height: 20px;
+}
+.weather-videos .current-track {
+  text-align: center;
+  margin: 0;
+  font-size: 12px;
+}
+@media (max-width: 860px) {
+  .weather-videos {
+    order: 4;
+    width: 100%;
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 680px) {
+  .weather-videos .video-container {
+    padding: 8px;
+  }
+  .weather-videos .video-thumb {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    margin-right: 8px;
+    cursor: pointer;
+  }
+  .weather-videos .video-thumb-current {
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    margin-right: 8px;
+  }
+  .weather-videos .vid_text_title {
+    font-size: 12px;
+  }
+  .weather-videos .vid_text_by {
+    font-size: 10px;
+  }
+  .weather-videos .pause-div {
+    background-color: #63d3ab;
+    padding: 8px 0;
+    border-radius: 8px;
+    margin-left: 8px;
+  }
+  .weather-videos .pause {
+    width: 16px;
+    height: 16px;
+  }
+  .weather-videos .current-track {
+    font-size: 10px;
+  }
+}

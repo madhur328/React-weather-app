@@ -1,0 +1,31 @@
+.wr_section1 {
+  order: 1;
+  padding: 10px 30px;
+  width: 50%;
+}
+.wr_section1 .report-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wr_section1 h2 {
+  text-align: center;
+}
+
+.wr_section1 .icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.wr_section1 .icon:hover {
+  filter: brightness(0) saturate(100%) invert(47%) sepia(90%) saturate(1022%)
+    hue-rotate(313deg) brightness(104%) contrast(108%);
+  transform: scale(1.01);
+}
+@media (max-width: 860px) {
+  .wr_section1 {
+    width: 100%;
+    padding: 10px 20px;
+    border-bottom: 1px solid rgb(236, 228, 228);
+  }
+}

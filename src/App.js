@@ -1,24 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import LeftPanel from './components/LeftPanel';
+import Header from './components/Header';
+import WeatherReports from './components/WeatherReports';
+import Statistics from './components/Statistics';
+import { ModalProvider } from './components/Modal';
+import WeatherVideos from './components/WeatherVideos';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ModalProvider>
+      <div className="weather_app">
+        <LeftPanel/>
+        <div className="main-body_app">
+          <Header />
+          <div class="main-content_app">
+            <WeatherReports />
+            <Statistics />
+            <WeatherVideos/>
+          </div>
+        </div>
+      </div>
+    </ModalProvider>
   );
 }
 

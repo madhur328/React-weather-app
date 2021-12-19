@@ -1,0 +1,29 @@
+.h_nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-bottom: 1px solid rgb(236, 228, 228);
+  height: 80px;
+}
+.h_nav-bar .icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.h_nav-bar .icon:hover {
+  filter: brightness(0) saturate(100%) invert(47%) sepia(90%) saturate(1022%)
+    hue-rotate(313deg) brightness(104%) contrast(108%);
+  transform: scale(1.01);
+}
+.h_nav-bar ul {
+  list-style: none;
+  display: flex;
+}
+.h_nav-bar li {
+  margin-right: 30px;
+}
+@media (max-width: 860px) {
+  .h_nav-bar {
+    display: none;
+  }
+}

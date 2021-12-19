@@ -1,0 +1,118 @@
+.card-container h4,
+.card-container h6 {
+  margin: 0 0 0 10px;
+  padding: 0;
+}
+.card-container {
+  display: flex;
+  overflow: auto;
+  margin-bottom: 10px;
+}
+.card-container {
+  scrollbar-width: 12px;
+  scrollbar-color: #f9896b #f7ffff;
+}
+.card-container::-webkit-scrollbar {
+  height: 10px;
+}
+.card-container::-webkit-scrollbar-track {
+  background: #f7ffff;
+}
+.card-container::-webkit-scrollbar-thumb {
+  background-color: #f9896b;
+  border-radius: 6px;
+  border: 1px solid #f7ffff;
+}
+.card-container .card {
+  padding-top: 10px;
+  width: 30%;
+  min-height: 200px;
+  border-radius: 20px;
+  flex-shrink: 0;
+  margin-right: calc(5% / 3);
+  margin-bottom: 20px;
+}
+.card-container .card-img {
+  width: 100%;
+  height: 220px;
+  opacity: 0.7;
+  object-fit: contain;
+}
+.card-container .wicon {
+  width: 25px;
+  height: 25px;
+}
+
+.card-container [data-tooltip] {
+  position: relative;
+  cursor: pointer;
+  color: white;
+  font-size: 12px;
+  border-radius: 1em;
+  padding: 0 0.5em;
+}
+.card-container [data-tooltip]:before {
+  content: attr(data-tooltip);
+  position: absolute;
+  opacity: 0;
+  bottom: 35px;
+  transform: translateX(-25%);
+  padding: 0.5em;
+  background-color: lightgray;
+  border-radius: 0.25em;
+  color: #2b0688;
+  text-align: center;
+  transition: 0.2s;
+}
+.card-container [data-tooltip]:after {
+  content: "";
+  position: absolute;
+  opacity: 0;
+  bottom: 25px;
+  margin-left: -18px;
+  border: 5px solid lightgray;
+  border-color: lightgray transparent transparent transparent;
+  transition: 0.2s;
+}
+.card-container [data-tooltip]:hover:before,
+.card-container [data-tooltip]:hover:after {
+  opacity: 1;
+}
+.card-container .weather-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 50px;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+.card-container .wtext {
+  font-size: 12px;
+  font-weight: bold;
+}
+.card-container .wtext-inner {
+  font-size: 15px;
+  font-weight: normal;
+}
+.card-container .card1 {
+  background-color: #fce9b5;
+  box-shadow: 0px 42px 50px -6px rgba(252, 233, 181, 0.8);
+}
+.card-container .card2 {
+  background-color: #dfffce;
+  box-shadow: 0px 42px 50px -6px rgba(223, 255, 206, 0.8);
+}
+.card-container .card3 {
+  background-color: #ffdefb;
+  box-shadow: 0px 42px 50px -6px rgba(255, 222, 251, 0.8);
+}
+.card-container .card4 {
+  background-color: #e4e6ff;
+  box-shadow: 0px 42px 50px -6px rgba(228, 230, 255, 0.8);
+}
+.card-container .card5 {
+  background-color: #d3f5ff;
+  box-shadow: 0px 42px 50px -6px rgba(211, 245, 255, 0.8);
+}
