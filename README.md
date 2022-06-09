@@ -1,4 +1,4 @@
-## Weather application dashboard with interactive visualizations and login capabilities
+Weather application dashboard with interactive visualizations and login capabilities
 
 # Getting Started with Create React App
 
